@@ -50,17 +50,17 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label17 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnCheck = new System.Windows.Forms.Button();
             this.btnPassSave = new System.Windows.Forms.Button();
             this.btnPassCancel = new System.Windows.Forms.Button();
-            this.btnCheck = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -277,108 +277,19 @@
             this.panel2.Size = new System.Drawing.Size(984, 481);
             this.panel2.TabIndex = 60;
             // 
-            // comboBox1
+            // btnCheck
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Myanmar",
-            "English",
-            "Geography",
-            "History",
-            "Philosophy",
-            "Psychology",
-            "Law",
-            "Oriental Studies",
-            "International Relations",
-            "Anthropology",
-            "Archaeology",
-            "Economics",
-            "Chemistry",
-            "Physics",
-            "Mathematics",
-            "Zoology",
-            "Botany",
-            "Geology",
-            "Industrial Chemistry",
-            "Computer Science"});
-            this.comboBox1.Location = new System.Drawing.Point(620, 100);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(220, 33);
-            this.comboBox1.TabIndex = 112;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(141, 330);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 28);
-            this.label6.TabIndex = 113;
-            this.label6.Text = "Hostel Info";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(227, 328);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(118, 23);
-            this.label13.TabIndex = 114;
-            this.label13.Text = "(*Optional)";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(142, 369);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(504, 23);
-            this.label14.TabIndex = 115;
-            this.label14.Text = "Fill the name of the hostel you lived in last semster.";
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(142, 413);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(163, 25);
-            this.label17.TabIndex = 118;
-            this.label17.Text = "Hostel Name :";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "None",
-            "Dagon",
-            "Yankin",
-            "Okakalapa",
-            "Shwepyitha",
-            "Cherry",
-            "Nguwa",
-            "SwelDaw",
-            "ZeZaWar",
-            "Padauk"});
-            this.comboBox2.Location = new System.Drawing.Point(273, 410);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(220, 33);
-            this.comboBox2.TabIndex = 124;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(516, 413);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(176, 25);
-            this.label15.TabIndex = 125;
-            this.label15.Text = "Admission Fee :";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(640, 410);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 34);
-            this.textBox1.TabIndex = 126;
+            this.btnCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnCheck.FlatAppearance.BorderSize = 0;
+            this.btnCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCheck.ForeColor = System.Drawing.Color.Black;
+            this.btnCheck.Location = new System.Drawing.Point(601, 440);
+            this.btnCheck.Name = "btnCheck";
+            this.btnCheck.Size = new System.Drawing.Size(94, 35);
+            this.btnCheck.TabIndex = 129;
+            this.btnCheck.Text = "Check";
+            this.btnCheck.UseVisualStyleBackColor = false;
             // 
             // btnPassSave
             // 
@@ -408,19 +319,109 @@
             this.btnPassCancel.Text = "Cancel";
             this.btnPassCancel.UseVisualStyleBackColor = false;
             // 
-            // btnCheck
+            // textBox1
             // 
-            this.btnCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnCheck.FlatAppearance.BorderSize = 0;
-            this.btnCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCheck.ForeColor = System.Drawing.Color.Black;
-            this.btnCheck.Location = new System.Drawing.Point(601, 440);
-            this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(94, 35);
-            this.btnCheck.TabIndex = 129;
-            this.btnCheck.Text = "Check";
-            this.btnCheck.UseVisualStyleBackColor = false;
+            this.textBox1.Location = new System.Drawing.Point(640, 410);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(200, 34);
+            this.textBox1.TabIndex = 126;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(516, 413);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(176, 25);
+            this.label15.TabIndex = 125;
+            this.label15.Text = "Admission Fee :";
+            // 
+            // comboBox2
+            // 
+            this.comboBox2.FormattingEnabled = true;
+            this.comboBox2.Items.AddRange(new object[] {
+            "None",
+            "Dagon",
+            "Yankin",
+            "Okakalapa",
+            "Shwepyitha",
+            "Cherry",
+            "Nguwa",
+            "SwelTaw",
+            "ZeZaWar",
+            "Padauk",
+            "GankGaw"});
+            this.comboBox2.Location = new System.Drawing.Point(273, 410);
+            this.comboBox2.Name = "comboBox2";
+            this.comboBox2.Size = new System.Drawing.Size(220, 33);
+            this.comboBox2.TabIndex = 124;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(142, 413);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(163, 25);
+            this.label17.TabIndex = 118;
+            this.label17.Text = "Hostel Name :";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(142, 369);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(504, 23);
+            this.label14.TabIndex = 115;
+            this.label14.Text = "Fill the name of the hostel you lived in last semster.";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(227, 328);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(118, 23);
+            this.label13.TabIndex = 114;
+            this.label13.Text = "(*Optional)";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(141, 330);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(132, 28);
+            this.label6.TabIndex = 113;
+            this.label6.Text = "Hostel Info";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Myanmar",
+            "English",
+            "Geography",
+            "History",
+            "Philosophy",
+            "Psychology",
+            "Law",
+            "Oriental Studies",
+            "International Relations",
+            "Anthropology",
+            "Archaeology",
+            "Economics",
+            "Chemistry",
+            "Physics",
+            "Mathematics",
+            "Zoology",
+            "Botany",
+            "Geology",
+            "Industrial Chemistry",
+            "Computer Science"});
+            this.comboBox1.Location = new System.Drawing.Point(620, 100);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(220, 33);
+            this.comboBox1.TabIndex = 112;
             // 
             // StudentForm
             // 
@@ -432,7 +433,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StudentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "STUDENT FORM";

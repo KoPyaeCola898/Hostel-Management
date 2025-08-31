@@ -43,12 +43,12 @@ namespace Student_Hostel_Management
 
         private void btnDashboard_Click_1(object sender, EventArgs e)
         {
-
+            openChildForm(new Dashboard());
         }
 
         private void btnSForm_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new HostelForm());
         }
 
         private void btnRule_Click(object sender, EventArgs e)
@@ -69,6 +69,11 @@ namespace Student_Hostel_Management
                 Login login = new Login();
                 login.ShowDialog();
             }
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            btnDashboard.PerformClick();
         }
     }
 }

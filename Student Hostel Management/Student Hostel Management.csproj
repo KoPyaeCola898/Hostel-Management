@@ -73,7 +73,25 @@
     <Compile Include="CreateAcc.Designer.cs">
       <DependentUpon>CreateAcc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dashboard.Designer.cs">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </Compile>
     <Compile Include="DBConnect.cs" />
+    <Compile Include="HostelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HostelForm.Designer.cs">
+      <DependentUpon>HostelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HostelFormModule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HostelFormModule.Designer.cs">
+      <DependentUpon>HostelFormModule.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,6 +144,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreateAcc.resx">
       <DependentUpon>CreateAcc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dashboard.resx">
+      <DependentUpon>Dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HostelForm.resx">
+      <DependentUpon>HostelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HostelFormModule.resx">
+      <DependentUpon>HostelFormModule.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
