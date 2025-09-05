@@ -190,7 +190,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ChangePss";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SETTING";
+            this.Text = "ACCOUNT SETTING";
             this.Load += new System.EventHandler(this.ChangePss_Load);
             this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

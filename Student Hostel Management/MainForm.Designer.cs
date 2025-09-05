@@ -43,6 +43,7 @@
             this.btnRule = new System.Windows.Forms.Button();
             this.btnSForm = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
+            this.lblid = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelLogo.SuspendLayout();
             this.panelTitle.SuspendLayout();
@@ -133,6 +134,7 @@
             // panelLogo
             // 
             this.panelLogo.BackColor = System.Drawing.Color.Green;
+            this.panelLogo.Controls.Add(this.lblid);
             this.panelLogo.Controls.Add(this.lblName);
             this.panelLogo.Controls.Add(this.lblRole);
             this.panelLogo.Controls.Add(this.pictureBox1);
@@ -249,6 +251,17 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click_1);
             // 
+            // lblid
+            // 
+            this.lblid.AutoSize = true;
+            this.lblid.ForeColor = System.Drawing.Color.White;
+            this.lblid.Location = new System.Drawing.Point(3, 18);
+            this.lblid.Name = "lblid";
+            this.lblid.Size = new System.Drawing.Size(31, 25);
+            this.lblid.TabIndex = 1;
+            this.lblid.Text = "id";
+            this.lblid.Visible = false;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 25F);
@@ -289,5 +302,6 @@
         private System.Windows.Forms.Button btnRule;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnSForm;
+        public System.Windows.Forms.Label lblid;
     }
 }

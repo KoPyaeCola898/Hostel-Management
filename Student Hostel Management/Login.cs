@@ -36,7 +36,7 @@ namespace Student_Hostel_Management
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string _username = "", _name = "", _role = "";
+            string _id = "", _username = "", _name = "", _role = "";
             try
             {
                 bool found;
@@ -49,6 +49,7 @@ namespace Student_Hostel_Management
                 if (dr.HasRows)
                 {
                     found = true;
+                    _id = dr["id"].ToString();
                     _username = dr["username"].ToString();
                     _name = dr["name"].ToString();
                     _role = dr["role"].ToString();
@@ -71,6 +72,7 @@ namespace Student_Hostel_Management
                         txtPass.Clear();
                         this.Hide();
                         Student student = new Student();
+                        student.lblid.Text = _id;
                         student.lblUsername.Text = _username;
                         student.lblName.Text = _name;
                         student._pass = _pass;

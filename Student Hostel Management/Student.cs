@@ -43,7 +43,7 @@ namespace Student_Hostel_Management
 
         private void btnForm_Click(object sender, EventArgs e)
         {
-            openChildForm(new StudentForm());
+            openChildForm(new StudentForm(this));
         }
 
         private void btnRule_Click(object sender, EventArgs e)

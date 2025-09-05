@@ -51,16 +51,16 @@
             this.label12 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnCheck = new System.Windows.Forms.Button();
-            this.btnPassSave = new System.Windows.Forms.Button();
-            this.btnPassCancel = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.txtAdFee = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboHostel = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cboMajor = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -243,17 +243,17 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
             this.panel2.Controls.Add(this.btnCheck);
-            this.panel2.Controls.Add(this.btnPassSave);
-            this.panel2.Controls.Add(this.btnPassCancel);
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.btnSubmit);
+            this.panel2.Controls.Add(this.btnCancel);
+            this.panel2.Controls.Add(this.txtAdFee);
             this.panel2.Controls.Add(this.label15);
-            this.panel2.Controls.Add(this.comboBox2);
+            this.panel2.Controls.Add(this.cboHostel);
             this.panel2.Controls.Add(this.lblId);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.label14);
             this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.comboBox1);
+            this.panel2.Controls.Add(this.cboMajor);
             this.panel2.Controls.Add(this.label12);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.txtfPhno);
@@ -288,43 +288,47 @@
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(94, 35);
             this.btnCheck.TabIndex = 129;
-            this.btnCheck.Text = "Check";
+            this.btnCheck.Text = "View";
             this.btnCheck.UseVisualStyleBackColor = false;
+            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
-            // btnPassSave
+            // btnSubmit
             // 
-            this.btnPassSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPassSave.BackColor = System.Drawing.Color.Green;
-            this.btnPassSave.FlatAppearance.BorderSize = 0;
-            this.btnPassSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPassSave.ForeColor = System.Drawing.Color.White;
-            this.btnPassSave.Location = new System.Drawing.Point(711, 440);
-            this.btnPassSave.Name = "btnPassSave";
-            this.btnPassSave.Size = new System.Drawing.Size(126, 35);
-            this.btnPassSave.TabIndex = 127;
-            this.btnPassSave.Text = "Pay && Submit";
-            this.btnPassSave.UseVisualStyleBackColor = false;
+            this.btnSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSubmit.BackColor = System.Drawing.Color.Green;
+            this.btnSubmit.FlatAppearance.BorderSize = 0;
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
+            this.btnSubmit.Location = new System.Drawing.Point(711, 440);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(126, 35);
+            this.btnSubmit.TabIndex = 127;
+            this.btnSubmit.Text = "Pay && Submit";
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
-            // btnPassCancel
+            // btnCancel
             // 
-            this.btnPassCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPassCancel.BackColor = System.Drawing.Color.Silver;
-            this.btnPassCancel.FlatAppearance.BorderSize = 0;
-            this.btnPassCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPassCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnPassCancel.Location = new System.Drawing.Point(852, 440);
-            this.btnPassCancel.Name = "btnPassCancel";
-            this.btnPassCancel.Size = new System.Drawing.Size(94, 35);
-            this.btnPassCancel.TabIndex = 128;
-            this.btnPassCancel.Text = "Cancel";
-            this.btnPassCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.BackColor = System.Drawing.Color.Silver;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.ForeColor = System.Drawing.Color.Black;
+            this.btnCancel.Location = new System.Drawing.Point(852, 440);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(94, 35);
+            this.btnCancel.TabIndex = 128;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // textBox1
+            // txtAdFee
             // 
-            this.textBox1.Location = new System.Drawing.Point(640, 410);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(200, 34);
-            this.textBox1.TabIndex = 126;
+            this.txtAdFee.Location = new System.Drawing.Point(640, 410);
+            this.txtAdFee.Name = "txtAdFee";
+            this.txtAdFee.Size = new System.Drawing.Size(200, 34);
+            this.txtAdFee.TabIndex = 126;
+            this.txtAdFee.Text = "50000";
             // 
             // label15
             // 
@@ -335,10 +339,10 @@
             this.label15.TabIndex = 125;
             this.label15.Text = "Admission Fee :";
             // 
-            // comboBox2
+            // cboHostel
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cboHostel.FormattingEnabled = true;
+            this.cboHostel.Items.AddRange(new object[] {
             "None",
             "Dagon",
             "Yankin",
@@ -350,10 +354,10 @@
             "ZeZaWar",
             "Padauk",
             "GankGaw"});
-            this.comboBox2.Location = new System.Drawing.Point(273, 410);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(220, 33);
-            this.comboBox2.TabIndex = 124;
+            this.cboHostel.Location = new System.Drawing.Point(273, 410);
+            this.cboHostel.Name = "cboHostel";
+            this.cboHostel.Size = new System.Drawing.Size(220, 33);
+            this.cboHostel.TabIndex = 124;
             // 
             // label17
             // 
@@ -394,10 +398,10 @@
             this.label6.TabIndex = 113;
             this.label6.Text = "Hostel Info";
             // 
-            // comboBox1
+            // cboMajor
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cboMajor.FormattingEnabled = true;
+            this.cboMajor.Items.AddRange(new object[] {
             "Myanmar",
             "English",
             "Geography",
@@ -418,10 +422,10 @@
             "Geology",
             "Industrial Chemistry",
             "Computer Science"});
-            this.comboBox1.Location = new System.Drawing.Point(620, 100);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(220, 33);
-            this.comboBox1.TabIndex = 112;
+            this.cboMajor.Location = new System.Drawing.Point(620, 100);
+            this.cboMajor.Name = "cboMajor";
+            this.cboMajor.Size = new System.Drawing.Size(220, 33);
+            this.cboMajor.TabIndex = 112;
             // 
             // StudentForm
             // 
@@ -436,7 +440,8 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StudentForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "STUDENT FORM";
+            this.Text = "STUDENT REGISTRATION FORM";
+            this.Load += new System.EventHandler(this.StudentForm_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
@@ -467,16 +472,16 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Panel panel2;
-        public System.Windows.Forms.ComboBox comboBox1;
+        public System.Windows.Forms.ComboBox cboMajor;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label17;
-        public System.Windows.Forms.ComboBox comboBox2;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.ComboBox cboHostel;
+        public System.Windows.Forms.TextBox txtAdFee;
         private System.Windows.Forms.Label label15;
-        public System.Windows.Forms.Button btnPassSave;
-        public System.Windows.Forms.Button btnPassCancel;
+        public System.Windows.Forms.Button btnSubmit;
+        public System.Windows.Forms.Button btnCancel;
         public System.Windows.Forms.Button btnCheck;
     }
 }
