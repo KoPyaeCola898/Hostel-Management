@@ -2,26 +2,29 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
 
 namespace Student_Hostel_Management
 {
-    public partial class HostelForm : Form
+    public partial class AllocatedForm : Form
     {
         SqlConnection cn = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         DBConnect dbcon = new DBConnect();
         SqlDataReader dr;
+        Warden warden;
+        public string _hostel;
 
-        public HostelForm()
+        public AllocatedForm(Warden wa)
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
+            warden = wa;
             LoadForm();
         }
 
@@ -29,7 +32,7 @@ namespace Student_Hostel_Management
         {
             int i = 0;
             dgvAppForm.Rows.Clear();
-            string query  = "SELECT sid, rollno, name, address, hostel FROM tbForm WHERE status = 'Pending' ORDER BY aid";
+            string query = "SELECT sid, rollno, name, address, hostel FROM tbForm WHERE acstatus = 'Pending' AND alhostel = '" + warden.lblName.Text + "' ORDER BY aid";
             cmd = new SqlCommand(query, cn);
             cn.Open();
             dr = cmd.ExecuteReader();
@@ -40,6 +43,11 @@ namespace Student_Hostel_Management
             }
             dr.Close();
             cn.Close();
+        }
+
+        private void AllocatedForm_Load(object sender, EventArgs e)
+        {
+            _hostel = warden.lblName.Text;
         }
     }
 }

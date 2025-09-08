@@ -78,6 +78,19 @@ namespace Student_Hostel_Management
                         student._pass = _pass;
                         student.ShowDialog();
                     }
+                    if (_role == "Warden")
+                    {
+                        MessageBox.Show("Welcome " + _name + "!", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        txtName.Clear();
+                        txtPass.Clear();
+                        this.Hide();
+                        Warden warden = new Warden();
+                        warden.lblid.Text = _id;
+                        warden.lblUsername.Text = _username;
+                        warden.lblName.Text = _name;
+                        warden._pass = _pass;
+                        warden.ShowDialog();
+                    }
                     else
                     {
                         MessageBox.Show("Welcome " + _name + "!", "ACCESS GRANTED", MessageBoxButtons.OK, MessageBoxIcon.Information);
