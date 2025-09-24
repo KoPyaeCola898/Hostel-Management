@@ -54,11 +54,10 @@
             this.btnSubmit = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
             this.txtAdFee = new System.Windows.Forms.TextBox();
-            this.label15 = new System.Windows.Forms.Label();
+            this.lblAdFee = new System.Windows.Forms.Label();
             this.cboHostel = new System.Windows.Forms.ComboBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.cboMajor = new System.Windows.Forms.ComboBox();
             this.panel1.SuspendLayout();
@@ -246,12 +245,11 @@
             this.panel2.Controls.Add(this.btnSubmit);
             this.panel2.Controls.Add(this.btnCancel);
             this.panel2.Controls.Add(this.txtAdFee);
-            this.panel2.Controls.Add(this.label15);
+            this.panel2.Controls.Add(this.lblAdFee);
             this.panel2.Controls.Add(this.cboHostel);
             this.panel2.Controls.Add(this.lblId);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.label13);
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.cboMajor);
             this.panel2.Controls.Add(this.label12);
@@ -290,6 +288,7 @@
             this.btnCheck.TabIndex = 129;
             this.btnCheck.Text = "View";
             this.btnCheck.UseVisualStyleBackColor = false;
+            this.btnCheck.Visible = false;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
             // btnSubmit
@@ -303,7 +302,7 @@
             this.btnSubmit.Name = "btnSubmit";
             this.btnSubmit.Size = new System.Drawing.Size(126, 35);
             this.btnSubmit.TabIndex = 127;
-            this.btnSubmit.Text = "Pay && Submit";
+            this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = false;
             this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
             // 
@@ -329,15 +328,17 @@
             this.txtAdFee.Size = new System.Drawing.Size(200, 34);
             this.txtAdFee.TabIndex = 126;
             this.txtAdFee.Text = "50000";
+            this.txtAdFee.Visible = false;
             // 
-            // label15
+            // lblAdFee
             // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(516, 413);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(176, 25);
-            this.label15.TabIndex = 125;
-            this.label15.Text = "Admission Fee :";
+            this.lblAdFee.AutoSize = true;
+            this.lblAdFee.Location = new System.Drawing.Point(516, 413);
+            this.lblAdFee.Name = "lblAdFee";
+            this.lblAdFee.Size = new System.Drawing.Size(176, 25);
+            this.lblAdFee.TabIndex = 125;
+            this.lblAdFee.Text = "Admission Fee :";
+            this.lblAdFee.Visible = false;
             // 
             // cboHostel
             // 
@@ -377,16 +378,6 @@
             this.label14.Size = new System.Drawing.Size(504, 23);
             this.label14.TabIndex = 115;
             this.label14.Text = "Fill the name of the hostel you lived in last semster.";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(227, 328);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(118, 23);
-            this.label13.TabIndex = 114;
-            this.label13.Text = "(*Optional)";
             // 
             // label6
             // 
@@ -474,12 +465,11 @@
         private System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.ComboBox cboMajor;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label17;
         public System.Windows.Forms.ComboBox cboHostel;
         public System.Windows.Forms.TextBox txtAdFee;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblAdFee;
         public System.Windows.Forms.Button btnSubmit;
         public System.Windows.Forms.Button btnCancel;
         public System.Windows.Forms.Button btnCheck;

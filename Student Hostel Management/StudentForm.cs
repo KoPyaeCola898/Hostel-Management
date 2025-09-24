@@ -35,7 +35,7 @@ namespace Student_Hostel_Management
             txtfPhno.Clear();
             txtfAddress.Clear();
             cboMajor.SelectedIndex = -1;
-            cboHostel.SelectedIndex = 1;
+            cboHostel.SelectedIndex = 0;
 
             txtRollNo.Focus();
         }
@@ -53,7 +53,10 @@ namespace Student_Hostel_Management
             cboHostel.Enabled = false;
             btnSubmit.Enabled = false;
             btnCancel.Enabled = false;
-            btnCheck.Enabled = true;
+
+            txtAdFee.Visible = true;
+            lblAdFee.Visible = true;
+            btnCheck.Visible = true;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -102,9 +105,48 @@ namespace Student_Hostel_Management
             MessageBox.Show("Please wait while we are checking your application form status.", "Checking", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        public void LoadForm()
+        {
+            cn.Open();
+            cmd = new SqlCommand("SELECT * FROM tbForm WHERE sid = @sid", cn);
+            cmd.Parameters.AddWithValue("@sid", int.Parse(lblId.Text));
+            SqlDataReader dr = cmd.ExecuteReader();
+            if (dr.Read())
+            {
+                txtRollNo.Text = dr["rollno"].ToString();
+                txtName.Text = dr["name"].ToString();
+                txtPhNo.Text = dr["phno"].ToString();
+                cboMajor.Text = dr["major"].ToString();
+                txtAddress.Text = dr["address"].ToString();
+                txtfName.Text = dr["fname"].ToString();
+                txtfPhno.Text = dr["fphno"].ToString();
+                txtfAddress.Text = dr["faddress"].ToString();
+                cboHostel.Text = dr["hostel"].ToString();
+            }
+            dr.Close();
+            cn.Close();
+        }
+
         private void StudentForm_Load(object sender, EventArgs e)
         {
             lblId.Text = student.lblid.Text;
+
+            // Check if the student has already submitted a form
+            cn.Open();
+            cmd = new SqlCommand("SELECT COUNT(*) FROM tbForm WHERE sid = @sid", cn);
+            cmd.Parameters.AddWithValue("@sid", int.Parse(lblId.Text));
+            int count = Convert.ToInt32(cmd.ExecuteScalar());
+            cn.Close();
+            if (count > 0)
+            {
+                Disable();
+                LoadForm();
+            }
+            else
+            {
+                Clear();
+            }
+
         }
     }
 }

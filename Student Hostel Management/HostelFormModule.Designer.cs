@@ -34,7 +34,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.btnPassSave = new System.Windows.Forms.Button();
             this.btnPassCancel = new System.Windows.Forms.Button();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cboAlHostel = new System.Windows.Forms.ComboBox();
             this.lblId = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -55,9 +55,9 @@
             this.txtName = new System.Windows.Forms.TextBox();
             this.txtPhNo = new System.Windows.Forms.TextBox();
             this.txtRollNo = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtHostel = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtMajor = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.SuspendLayout();
@@ -82,6 +82,7 @@
             this.picClose.Size = new System.Drawing.Size(30, 35);
             this.picClose.TabIndex = 1;
             this.picClose.TabStop = false;
+            this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // label1
             // 
@@ -122,11 +123,10 @@
             this.btnPassCancel.Text = "Cancel";
             this.btnPassCancel.UseVisualStyleBackColor = false;
             // 
-            // comboBox2
+            // cboAlHostel
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "None",
+            this.cboAlHostel.FormattingEnabled = true;
+            this.cboAlHostel.Items.AddRange(new object[] {
             "Dagon",
             "Yankin",
             "Okakalapa",
@@ -137,10 +137,10 @@
             "ZeZaWar",
             "Padauk",
             "GankGaw"});
-            this.comboBox2.Location = new System.Drawing.Point(551, 436);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(220, 33);
-            this.comboBox2.TabIndex = 153;
+            this.cboAlHostel.Location = new System.Drawing.Point(551, 436);
+            this.cboAlHostel.Name = "cboAlHostel";
+            this.cboAlHostel.Size = new System.Drawing.Size(220, 33);
+            this.cboAlHostel.TabIndex = 153;
             // 
             // lblId
             // 
@@ -155,11 +155,11 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(447, 426);
+            this.label17.Location = new System.Drawing.Point(447, 423);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(108, 50);
+            this.label17.Size = new System.Drawing.Size(112, 50);
             this.label17.TabIndex = 152;
-            this.label17.Text = "Assigned\r\nHostel :";
+            this.label17.Text = "Allocate \r\nHostel :";
             // 
             // label6
             // 
@@ -312,12 +312,12 @@
             this.txtRollNo.Size = new System.Drawing.Size(220, 34);
             this.txtRollNo.TabIndex = 132;
             // 
-            // textBox1
+            // txtHostel
             // 
-            this.textBox1.Location = new System.Drawing.Point(204, 436);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(220, 34);
-            this.textBox1.TabIndex = 159;
+            this.txtHostel.Location = new System.Drawing.Point(204, 436);
+            this.txtHostel.Name = "txtHostel";
+            this.txtHostel.Size = new System.Drawing.Size(220, 34);
+            this.txtHostel.TabIndex = 159;
             // 
             // label13
             // 
@@ -328,12 +328,12 @@
             this.label13.TabIndex = 160;
             this.label13.Text = "Lived Hostel :";
             // 
-            // textBox2
+            // txtMajor
             // 
-            this.textBox2.Location = new System.Drawing.Point(551, 166);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(220, 34);
-            this.textBox2.TabIndex = 161;
+            this.txtMajor.Location = new System.Drawing.Point(551, 166);
+            this.txtMajor.Name = "txtMajor";
+            this.txtMajor.Size = new System.Drawing.Size(220, 34);
+            this.txtMajor.TabIndex = 161;
             // 
             // HostelFormModule
             // 
@@ -341,12 +341,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(848, 569);
             this.ControlBox = false;
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtMajor);
             this.Controls.Add(this.label13);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtHostel);
             this.Controls.Add(this.btnPassSave);
             this.Controls.Add(this.btnPassCancel);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.cboAlHostel);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.label6);
@@ -370,7 +370,7 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "HostelFormModule";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HostelFormModule";
@@ -389,7 +389,7 @@
         private System.Windows.Forms.Label label1;
         public System.Windows.Forms.Button btnPassSave;
         public System.Windows.Forms.Button btnPassCancel;
-        public System.Windows.Forms.ComboBox comboBox2;
+        public System.Windows.Forms.ComboBox cboAlHostel;
         public System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label6;
@@ -410,8 +410,8 @@
         public System.Windows.Forms.TextBox txtName;
         public System.Windows.Forms.TextBox txtPhNo;
         public System.Windows.Forms.TextBox txtRollNo;
-        public System.Windows.Forms.TextBox textBox1;
+        public System.Windows.Forms.TextBox txtHostel;
         private System.Windows.Forms.Label label13;
-        public System.Windows.Forms.TextBox textBox2;
+        public System.Windows.Forms.TextBox txtMajor;
     }
 }

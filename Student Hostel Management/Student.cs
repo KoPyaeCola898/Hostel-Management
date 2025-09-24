@@ -69,6 +69,16 @@ namespace Student_Hostel_Management
         private void Student_Load(object sender, EventArgs e)
         {
             btnForm.PerformClick();
+            StudentForm st = new StudentForm(this);
+            st.cboHostel.SelectedIndex = 0;
+        }
+
+        private void picClose_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Exit Application?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            {
+                Application.Exit();
+            }
         }
     }
 }

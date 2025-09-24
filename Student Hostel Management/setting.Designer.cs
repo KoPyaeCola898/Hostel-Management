@@ -105,7 +105,7 @@
             // btnPassCancel
             // 
             this.btnPassCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPassCancel.BackColor = System.Drawing.Color.Gainsboro;
+            this.btnPassCancel.BackColor = System.Drawing.Color.Silver;
             this.btnPassCancel.FlatAppearance.BorderSize = 0;
             this.btnPassCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnPassCancel.ForeColor = System.Drawing.Color.Black;

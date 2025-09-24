@@ -37,17 +37,19 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnForm = new System.Windows.Forms.Button();
             this.panelLogo = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblid = new System.Windows.Forms.Label();
             this.panelTitle = new System.Windows.Forms.Panel();
             this.panelSlide = new System.Windows.Forms.Panel();
             this.btnSetting = new System.Windows.Forms.Button();
             this.btnRule = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.lblid = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.picClose = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelLogo.SuspendLayout();
             this.panelTitle.SuspendLayout();
             this.panelSlide.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picClose)).BeginInit();
             this.SuspendLayout();
             // 
             // panelMain
@@ -145,9 +147,32 @@
             this.panelLogo.Size = new System.Drawing.Size(200, 170);
             this.panelLogo.TabIndex = 1;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(3, 142);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(132, 26);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Username :";
+            // 
+            // lblid
+            // 
+            this.lblid.AutoSize = true;
+            this.lblid.ForeColor = System.Drawing.Color.White;
+            this.lblid.Location = new System.Drawing.Point(9, 15);
+            this.lblid.Name = "lblid";
+            this.lblid.Size = new System.Drawing.Size(31, 25);
+            this.lblid.TabIndex = 2;
+            this.lblid.Text = "id";
+            this.lblid.Visible = false;
+            // 
             // panelTitle
             // 
             this.panelTitle.BackColor = System.Drawing.Color.Teal;
+            this.panelTitle.Controls.Add(this.picClose);
             this.panelTitle.Controls.Add(this.lblTitle);
             this.panelTitle.Dock = System.Windows.Forms.DockStyle.Top;
             this.panelTitle.Location = new System.Drawing.Point(200, 0);
@@ -230,27 +255,16 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // lblid
+            // picClose
             // 
-            this.lblid.AutoSize = true;
-            this.lblid.ForeColor = System.Drawing.Color.White;
-            this.lblid.Location = new System.Drawing.Point(9, 15);
-            this.lblid.Name = "lblid";
-            this.lblid.Size = new System.Drawing.Size(31, 25);
-            this.lblid.TabIndex = 2;
-            this.lblid.Text = "id";
-            this.lblid.Visible = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(3, 142);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(132, 26);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "Username :";
+            this.picClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.picClose.Image = ((System.Drawing.Image)(resources.GetObject("picClose.Image")));
+            this.picClose.Location = new System.Drawing.Point(945, 2);
+            this.picClose.Name = "picClose";
+            this.picClose.Size = new System.Drawing.Size(30, 35);
+            this.picClose.TabIndex = 2;
+            this.picClose.TabStop = false;
+            this.picClose.Click += new System.EventHandler(this.picClose_Click);
             // 
             // Student
             // 
@@ -261,6 +275,7 @@
             this.Controls.Add(this.panelTitle);
             this.Controls.Add(this.panelSlide);
             this.Font = new System.Drawing.Font("Century Gothic", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Student";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -271,6 +286,7 @@
             this.panelLogo.PerformLayout();
             this.panelTitle.ResumeLayout(false);
             this.panelSlide.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.picClose)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -292,5 +308,6 @@
         private System.Windows.Forms.Button btnLogout;
         public System.Windows.Forms.Label lblid;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox picClose;
     }
 }

@@ -41,5 +41,16 @@ namespace Student_Hostel_Management
             dr.Close();
             cn.Close();
         }
+
+        private void dgvAppForm_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            string colName = dgvAppForm.Columns[e.ColumnIndex].Name;
+            if (colName == "Submit")
+            {
+                HostelFormModule module = new HostelFormModule();
+                module.ShowDialog();
+
+            }
+        }
     }
 }

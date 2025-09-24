@@ -42,7 +42,7 @@ namespace Student_Hostel_Management
             while (dr.Read())
             {
                 i++;
-                dgvUser.Rows.Add(i, dr[0].ToString(), dr[3].ToString(), dr[1].ToString(), dr[2].ToString());
+                dgvUser.Rows.Add(i, dr[0].ToString(), dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString());
             }
             dr.Close();
             cn.Close();
@@ -137,9 +137,9 @@ namespace Student_Hostel_Management
         private void dgvUser_SelectionChanged(object sender, EventArgs e)
         {
             int i = dgvUser.CurrentRow.Index;
-            username = dgvUser[1, i].Value.ToString();
-            name = dgvUser[2, i].Value.ToString();
-            role = dgvUser[4, i].Value.ToString();
+            username = dgvUser[2, i].Value.ToString();
+            name = dgvUser[4, i].Value.ToString();
+            role = dgvUser[5, i].Value.ToString();
             password = dgvUser[3, i].Value.ToString();
             if (lblUsername.Text == username)
             {
@@ -153,7 +153,7 @@ namespace Student_Hostel_Management
                 btnResetPass.Enabled = true;
                 lblAccNote.Text = "To change the password for " + username + ", click Reset Password.";
             }
-            gbUser.Text = "Password For " + username;
+            gbUser.Text = "Password For " + name + " Hostel";
         }
 
         private void btnRemove_Click(object sender, EventArgs e)
