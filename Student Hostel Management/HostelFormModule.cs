@@ -16,11 +16,13 @@ namespace Student_Hostel_Management
         SqlConnection cn = new SqlConnection();
         SqlCommand cmd = new SqlCommand();
         DBConnect dbcon = new DBConnect();
+        HostelForm hostelForm;
 
-        public HostelFormModule()
+        public HostelFormModule(HostelForm hf)
         {
             InitializeComponent();
             cn = new SqlConnection(dbcon.myConnection());
+            hostelForm = hf;
         }
 
         private void picClose_Click(object sender, EventArgs e)
@@ -28,26 +30,25 @@ namespace Student_Hostel_Management
             this.Dispose();
         }
 
-        public void LoadForm()
+        private void btnPassCancel_Click(object sender, EventArgs e)
         {
-            cn.Open();
-            cmd = new SqlCommand("SELECT * FROM tbForm WHERE sid = @sid", cn);
-            cmd.Parameters.AddWithValue("@sid", int.Parse(lblId.Text));
-            SqlDataReader dr = cmd.ExecuteReader();
-            if (dr.Read())
+            this.Dispose();
+        }
+
+        private void btnPassSave_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("Are you sure you want to approve this student application?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                txtRollNo.Text = dr["rollno"].ToString();
-                txtName.Text = dr["name"].ToString();
-                txtPhNo.Text = dr["phno"].ToString();
-                txtMajor.Text = dr["major"].ToString();
-                txtAddress.Text = dr["address"].ToString();
-                txtfName.Text = dr["fname"].ToString();
-                txtfPhno.Text = dr["fphno"].ToString();
-                txtfAddress.Text = dr["faddress"].ToString();
-                txtHostel.Text = dr["hostel"].ToString();
+                cn.Open();
+                cmd = new SqlCommand("UPDATE tbForm SET status = 'Approved', alhostel = @alhostel WHERE sid = @sid", cn);
+                cmd.Parameters.AddWithValue("@sid", int.Parse(lblId.Text));
+                cmd.Parameters.AddWithValue("@alhostel", cboAlHostel.Text);
+                cmd.ExecuteNonQuery();
+                cn.Close();
+                MessageBox.Show("Application approved successfully!", "Hostel Management System", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Dispose();
             }
-            dr.Close();
-            cn.Close();
+            hostelForm.LoadForm();
         }
     }
 }

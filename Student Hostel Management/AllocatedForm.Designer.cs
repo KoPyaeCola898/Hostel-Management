@@ -168,7 +168,7 @@
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AllocatedForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Allocated Student Form List";
+            this.Text = "ALLOCATED STUDENT FROM LIST";
             this.Load += new System.EventHandler(this.AllocatedForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAppForm)).EndInit();
             this.panel1.ResumeLayout(false);

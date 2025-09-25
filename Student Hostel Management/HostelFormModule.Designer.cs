@@ -32,8 +32,8 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.picClose = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.btnPassSave = new System.Windows.Forms.Button();
-            this.btnPassCancel = new System.Windows.Forms.Button();
+            this.btnAssign = new System.Windows.Forms.Button();
+            this.btnCancel = new System.Windows.Forms.Button();
             this.cboAlHostel = new System.Windows.Forms.ComboBox();
             this.lblId = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
@@ -95,33 +95,35 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Application Module";
             // 
-            // btnPassSave
+            // btnAssign
             // 
-            this.btnPassSave.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPassSave.BackColor = System.Drawing.Color.Green;
-            this.btnPassSave.FlatAppearance.BorderSize = 0;
-            this.btnPassSave.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPassSave.ForeColor = System.Drawing.Color.White;
-            this.btnPassSave.Location = new System.Drawing.Point(563, 508);
-            this.btnPassSave.Name = "btnPassSave";
-            this.btnPassSave.Size = new System.Drawing.Size(126, 35);
-            this.btnPassSave.TabIndex = 156;
-            this.btnPassSave.Text = "Assign";
-            this.btnPassSave.UseVisualStyleBackColor = false;
+            this.btnAssign.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAssign.BackColor = System.Drawing.Color.Green;
+            this.btnAssign.FlatAppearance.BorderSize = 0;
+            this.btnAssign.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAssign.ForeColor = System.Drawing.Color.White;
+            this.btnAssign.Location = new System.Drawing.Point(563, 508);
+            this.btnAssign.Name = "btnAssign";
+            this.btnAssign.Size = new System.Drawing.Size(126, 35);
+            this.btnAssign.TabIndex = 156;
+            this.btnAssign.Text = "Assign";
+            this.btnAssign.UseVisualStyleBackColor = false;
+            this.btnAssign.Click += new System.EventHandler(this.btnPassSave_Click);
             // 
-            // btnPassCancel
+            // btnCancel
             // 
-            this.btnPassCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnPassCancel.BackColor = System.Drawing.Color.Silver;
-            this.btnPassCancel.FlatAppearance.BorderSize = 0;
-            this.btnPassCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPassCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnPassCancel.Location = new System.Drawing.Point(704, 508);
-            this.btnPassCancel.Name = "btnPassCancel";
-            this.btnPassCancel.Size = new System.Drawing.Size(94, 35);
-            this.btnPassCancel.TabIndex = 157;
-            this.btnPassCancel.Text = "Cancel";
-            this.btnPassCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.BackColor = System.Drawing.Color.Silver;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.ForeColor = System.Drawing.Color.Black;
+            this.btnCancel.Location = new System.Drawing.Point(704, 508);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(94, 35);
+            this.btnCancel.TabIndex = 157;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnPassCancel_Click);
             // 
             // cboAlHostel
             // 
@@ -344,8 +346,8 @@
             this.Controls.Add(this.txtMajor);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.txtHostel);
-            this.Controls.Add(this.btnPassSave);
-            this.Controls.Add(this.btnPassCancel);
+            this.Controls.Add(this.btnAssign);
+            this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.cboAlHostel);
             this.Controls.Add(this.lblId);
             this.Controls.Add(this.label17);
@@ -387,8 +389,8 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox picClose;
         private System.Windows.Forms.Label label1;
-        public System.Windows.Forms.Button btnPassSave;
-        public System.Windows.Forms.Button btnPassCancel;
+        public System.Windows.Forms.Button btnAssign;
+        public System.Windows.Forms.Button btnCancel;
         public System.Windows.Forms.ComboBox cboAlHostel;
         public System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Label label17;

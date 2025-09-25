@@ -48,7 +48,7 @@ namespace Student_Hostel_Management
 
         private void btnSetting_Click(object sender, EventArgs e)
         {
-
+            openChildForm(new WardenSetting(this));
         }
 
         private void btnLogout_Click(object sender, EventArgs e)
@@ -64,6 +64,11 @@ namespace Student_Hostel_Management
         private void Warden_Load(object sender, EventArgs e)
         {
             btnSForm.PerformClick();
+        }
+
+        private void btnRoom_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

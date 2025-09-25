@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
+using System.Xml.Linq;
 
 namespace Student_Hostel_Management
 {
@@ -47,9 +48,29 @@ namespace Student_Hostel_Management
             string colName = dgvAppForm.Columns[e.ColumnIndex].Name;
             if (colName == "Submit")
             {
-                HostelFormModule module = new HostelFormModule();
-                module.ShowDialog();
+                HostelFormModule module = new HostelFormModule(this);
+                module.lblId.Text = dgvAppForm.Rows[e.RowIndex].Cells[1].Value.ToString();
 
+                cn.Open();
+                cmd = new SqlCommand("SELECT * FROM tbForm WHERE sid = @sid", cn);
+                cmd.Parameters.AddWithValue("@sid", Convert.ToInt32(module.lblId.Text));
+                SqlDataReader dr = cmd.ExecuteReader();
+                if (dr.Read())
+                {
+                    module.txtRollNo.Text = dr["rollno"].ToString();
+                    module.txtName.Text = dr["name"].ToString();
+                    module.txtPhNo.Text = dr["phno"].ToString();
+                    module.txtMajor.Text = dr["major"].ToString();
+                    module.txtAddress.Text = dr["address"].ToString();
+                    module.txtfName.Text = dr["fname"].ToString();
+                    module.txtfPhno.Text = dr["fphno"].ToString();
+                    module.txtfAddress.Text = dr["faddress"].ToString();
+                    module.txtHostel.Text = dr["hostel"].ToString();
+                }
+                dr.Close();
+                cn.Close();
+
+                module.ShowDialog();
             }
         }
     }
