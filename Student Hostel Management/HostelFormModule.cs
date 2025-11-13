@@ -40,7 +40,7 @@ namespace Student_Hostel_Management
             if (MessageBox.Show("Are you sure you want to approve this student application?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 cn.Open();
-                cmd = new SqlCommand("UPDATE tbForm SET status = 'Approved', alhostel = @alhostel WHERE sid = @sid", cn);
+                cmd = new SqlCommand("UPDATE tbForm SET status = 'Approved', acstatus = 'Pending', alhostel = @alhostel WHERE sid = @sid", cn);
                 cmd.Parameters.AddWithValue("@sid", int.Parse(lblId.Text));
                 cmd.Parameters.AddWithValue("@alhostel", cboAlHostel.Text);
                 cmd.ExecuteNonQuery();

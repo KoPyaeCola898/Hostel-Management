@@ -86,6 +86,18 @@
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="DBConnect.cs" />
+    <Compile Include="FeeComplete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeeComplete.Designer.cs">
+      <DependentUpon>FeeComplete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FeeST.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FeeST.Designer.cs">
+      <DependentUpon>FeeST.cs</DependentUpon>
+    </Compile>
     <Compile Include="HostelForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,11 +124,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="QRFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="QRFrom.Designer.cs">
+      <DependentUpon>QRFrom.cs</DependentUpon>
+    </Compile>
     <Compile Include="ResetPassword.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ResetPassword.Designer.cs">
       <DependentUpon>ResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RoomInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RoomInfo.Designer.cs">
+      <DependentUpon>RoomInfo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rooms.Designer.cs">
+      <DependentUpon>Rooms.cs</DependentUpon>
     </Compile>
     <Compile Include="RuleModule.cs">
       <SubType>Form</SubType>
@@ -148,6 +178,12 @@
     <Compile Include="StudentForm.Designer.cs">
       <DependentUpon>StudentForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="SubmitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SubmitForm.Designer.cs">
+      <DependentUpon>SubmitForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Warden.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +211,12 @@
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FeeComplete.resx">
+      <DependentUpon>FeeComplete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FeeST.resx">
+      <DependentUpon>FeeST.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HostelForm.resx">
       <DependentUpon>HostelForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -196,8 +238,17 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="QRFrom.resx">
+      <DependentUpon>QRFrom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ResetPassword.resx">
       <DependentUpon>ResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RoomInfo.resx">
+      <DependentUpon>RoomInfo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rooms.resx">
+      <DependentUpon>Rooms.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RuleModule.resx">
       <DependentUpon>RuleModule.cs</DependentUpon>
@@ -213,6 +264,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="StudentForm.resx">
       <DependentUpon>StudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmitForm.resx">
+      <DependentUpon>SubmitForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Warden.resx">
       <DependentUpon>Warden.cs</DependentUpon>

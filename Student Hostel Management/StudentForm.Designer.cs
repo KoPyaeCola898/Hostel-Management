@@ -40,7 +40,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
-            this.lblId = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.txtfName = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -49,17 +48,15 @@
             this.txtfPhno = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.btnCheck = new System.Windows.Forms.Button();
-            this.btnSubmit = new System.Windows.Forms.Button();
-            this.btnCancel = new System.Windows.Forms.Button();
-            this.txtAdFee = new System.Windows.Forms.TextBox();
-            this.lblAdFee = new System.Windows.Forms.Label();
-            this.cboHostel = new System.Windows.Forms.ComboBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label14 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.cboMajor = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.lblId = new System.Windows.Forms.Label();
+            this.cboHostel = new System.Windows.Forms.ComboBox();
+            this.btnCancel = new System.Windows.Forms.Button();
+            this.btnSubmit = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -160,16 +157,6 @@
             this.txtAddress.Size = new System.Drawing.Size(567, 34);
             this.txtAddress.TabIndex = 101;
             // 
-            // lblId
-            // 
-            this.lblId.AutoSize = true;
-            this.lblId.Location = new System.Drawing.Point(724, 9);
-            this.lblId.Name = "lblId";
-            this.lblId.Size = new System.Drawing.Size(31, 25);
-            this.lblId.TabIndex = 102;
-            this.lblId.Text = "id";
-            this.lblId.Visible = false;
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -238,14 +225,130 @@
             this.label12.TabIndex = 111;
             this.label12.Text = "Student Info";
             // 
+            // cboMajor
+            // 
+            this.cboMajor.FormattingEnabled = true;
+            this.cboMajor.Items.AddRange(new object[] {
+            "Myanmar",
+            "English",
+            "Geography",
+            "History",
+            "Philosophy",
+            "Psychology",
+            "Law",
+            "Oriental Studies",
+            "International Relations",
+            "Anthropology",
+            "Archaeology",
+            "Economics",
+            "Chemistry",
+            "Physics",
+            "Mathematics",
+            "Zoology",
+            "Botany",
+            "Geology",
+            "Industrial Chemistry",
+            "Computer Science",
+            "Business Information Technology"});
+            this.cboMajor.Location = new System.Drawing.Point(620, 100);
+            this.cboMajor.Name = "cboMajor";
+            this.cboMajor.Size = new System.Drawing.Size(220, 33);
+            this.cboMajor.TabIndex = 112;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(141, 330);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(132, 28);
+            this.label6.TabIndex = 113;
+            this.label6.Text = "Hostel Info";
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(142, 369);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(504, 23);
+            this.label14.TabIndex = 115;
+            this.label14.Text = "Fill the name of the hostel you lived in last semster.";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(142, 413);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(163, 25);
+            this.label17.TabIndex = 118;
+            this.label17.Text = "Hostel Name :";
+            // 
+            // lblId
+            // 
+            this.lblId.AutoSize = true;
+            this.lblId.Location = new System.Drawing.Point(724, 9);
+            this.lblId.Name = "lblId";
+            this.lblId.Size = new System.Drawing.Size(31, 25);
+            this.lblId.TabIndex = 102;
+            this.lblId.Text = "id";
+            this.lblId.Visible = false;
+            // 
+            // cboHostel
+            // 
+            this.cboHostel.FormattingEnabled = true;
+            this.cboHostel.Items.AddRange(new object[] {
+            "None",
+            "Dagon",
+            "Yankin",
+            "Okakalapa",
+            "Shwepyitha",
+            "Cherry",
+            "Nguwa",
+            "SwelTaw",
+            "ZeZaWar",
+            "Padauk",
+            "GankGaw"});
+            this.cboHostel.Location = new System.Drawing.Point(273, 410);
+            this.cboHostel.Name = "cboHostel";
+            this.cboHostel.Size = new System.Drawing.Size(220, 33);
+            this.cboHostel.TabIndex = 124;
+            // 
+            // btnCancel
+            // 
+            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnCancel.BackColor = System.Drawing.Color.Silver;
+            this.btnCancel.FlatAppearance.BorderSize = 0;
+            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancel.ForeColor = System.Drawing.Color.Black;
+            this.btnCancel.Location = new System.Drawing.Point(852, 440);
+            this.btnCancel.Name = "btnCancel";
+            this.btnCancel.Size = new System.Drawing.Size(94, 35);
+            this.btnCancel.TabIndex = 128;
+            this.btnCancel.Text = "Cancel";
+            this.btnCancel.UseVisualStyleBackColor = false;
+            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
+            // 
+            // btnSubmit
+            // 
+            this.btnSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSubmit.BackColor = System.Drawing.Color.Green;
+            this.btnSubmit.FlatAppearance.BorderSize = 0;
+            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSubmit.ForeColor = System.Drawing.Color.White;
+            this.btnSubmit.Location = new System.Drawing.Point(711, 440);
+            this.btnSubmit.Name = "btnSubmit";
+            this.btnSubmit.Size = new System.Drawing.Size(126, 35);
+            this.btnSubmit.TabIndex = 127;
+            this.btnSubmit.Text = "Submit";
+            this.btnSubmit.UseVisualStyleBackColor = false;
+            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
-            this.panel2.Controls.Add(this.btnCheck);
             this.panel2.Controls.Add(this.btnSubmit);
             this.panel2.Controls.Add(this.btnCancel);
-            this.panel2.Controls.Add(this.txtAdFee);
-            this.panel2.Controls.Add(this.lblAdFee);
             this.panel2.Controls.Add(this.cboHostel);
             this.panel2.Controls.Add(this.lblId);
             this.panel2.Controls.Add(this.label17);
@@ -274,149 +377,6 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(984, 481);
             this.panel2.TabIndex = 60;
-            // 
-            // btnCheck
-            // 
-            this.btnCheck.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCheck.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.btnCheck.FlatAppearance.BorderSize = 0;
-            this.btnCheck.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCheck.ForeColor = System.Drawing.Color.Black;
-            this.btnCheck.Location = new System.Drawing.Point(601, 440);
-            this.btnCheck.Name = "btnCheck";
-            this.btnCheck.Size = new System.Drawing.Size(94, 35);
-            this.btnCheck.TabIndex = 129;
-            this.btnCheck.Text = "View";
-            this.btnCheck.UseVisualStyleBackColor = false;
-            this.btnCheck.Visible = false;
-            this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
-            // 
-            // btnSubmit
-            // 
-            this.btnSubmit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnSubmit.BackColor = System.Drawing.Color.Green;
-            this.btnSubmit.FlatAppearance.BorderSize = 0;
-            this.btnSubmit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnSubmit.ForeColor = System.Drawing.Color.White;
-            this.btnSubmit.Location = new System.Drawing.Point(711, 440);
-            this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(126, 35);
-            this.btnSubmit.TabIndex = 127;
-            this.btnSubmit.Text = "Submit";
-            this.btnSubmit.UseVisualStyleBackColor = false;
-            this.btnSubmit.Click += new System.EventHandler(this.btnSubmit_Click);
-            // 
-            // btnCancel
-            // 
-            this.btnCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCancel.BackColor = System.Drawing.Color.Silver;
-            this.btnCancel.FlatAppearance.BorderSize = 0;
-            this.btnCancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCancel.ForeColor = System.Drawing.Color.Black;
-            this.btnCancel.Location = new System.Drawing.Point(852, 440);
-            this.btnCancel.Name = "btnCancel";
-            this.btnCancel.Size = new System.Drawing.Size(94, 35);
-            this.btnCancel.TabIndex = 128;
-            this.btnCancel.Text = "Cancel";
-            this.btnCancel.UseVisualStyleBackColor = false;
-            this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
-            // 
-            // txtAdFee
-            // 
-            this.txtAdFee.Location = new System.Drawing.Point(640, 410);
-            this.txtAdFee.Name = "txtAdFee";
-            this.txtAdFee.Size = new System.Drawing.Size(200, 34);
-            this.txtAdFee.TabIndex = 126;
-            this.txtAdFee.Text = "50000";
-            this.txtAdFee.Visible = false;
-            // 
-            // lblAdFee
-            // 
-            this.lblAdFee.AutoSize = true;
-            this.lblAdFee.Location = new System.Drawing.Point(516, 413);
-            this.lblAdFee.Name = "lblAdFee";
-            this.lblAdFee.Size = new System.Drawing.Size(176, 25);
-            this.lblAdFee.TabIndex = 125;
-            this.lblAdFee.Text = "Admission Fee :";
-            this.lblAdFee.Visible = false;
-            // 
-            // cboHostel
-            // 
-            this.cboHostel.FormattingEnabled = true;
-            this.cboHostel.Items.AddRange(new object[] {
-            "None",
-            "Dagon",
-            "Yankin",
-            "Okakalapa",
-            "Shwepyitha",
-            "Cherry",
-            "Nguwa",
-            "SwelTaw",
-            "ZeZaWar",
-            "Padauk",
-            "GankGaw"});
-            this.cboHostel.Location = new System.Drawing.Point(273, 410);
-            this.cboHostel.Name = "cboHostel";
-            this.cboHostel.Size = new System.Drawing.Size(220, 33);
-            this.cboHostel.TabIndex = 124;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(142, 413);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(163, 25);
-            this.label17.TabIndex = 118;
-            this.label17.Text = "Hostel Name :";
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Century Gothic", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(142, 369);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(504, 23);
-            this.label14.TabIndex = 115;
-            this.label14.Text = "Fill the name of the hostel you lived in last semster.";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(141, 330);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 28);
-            this.label6.TabIndex = 113;
-            this.label6.Text = "Hostel Info";
-            // 
-            // cboMajor
-            // 
-            this.cboMajor.FormattingEnabled = true;
-            this.cboMajor.Items.AddRange(new object[] {
-            "Myanmar",
-            "English",
-            "Geography",
-            "History",
-            "Philosophy",
-            "Psychology",
-            "Law",
-            "Oriental Studies",
-            "International Relations",
-            "Anthropology",
-            "Archaeology",
-            "Economics",
-            "Chemistry",
-            "Physics",
-            "Mathematics",
-            "Zoology",
-            "Botany",
-            "Geology",
-            "Industrial Chemistry",
-            "Computer Science"});
-            this.cboMajor.Location = new System.Drawing.Point(620, 100);
-            this.cboMajor.Name = "cboMajor";
-            this.cboMajor.Size = new System.Drawing.Size(220, 33);
-            this.cboMajor.TabIndex = 112;
             // 
             // StudentForm
             // 
@@ -453,7 +413,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.TextBox txtAddress;
-        public System.Windows.Forms.Label lblId;
         private System.Windows.Forms.Label label8;
         public System.Windows.Forms.TextBox txtfName;
         private System.Windows.Forms.Label label11;
@@ -462,16 +421,14 @@
         public System.Windows.Forms.TextBox txtfPhno;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.ComboBox cboMajor;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label17;
+        public System.Windows.Forms.Label lblId;
         public System.Windows.Forms.ComboBox cboHostel;
-        public System.Windows.Forms.TextBox txtAdFee;
-        private System.Windows.Forms.Label lblAdFee;
-        public System.Windows.Forms.Button btnSubmit;
         public System.Windows.Forms.Button btnCancel;
-        public System.Windows.Forms.Button btnCheck;
+        public System.Windows.Forms.Button btnSubmit;
+        private System.Windows.Forms.Panel panel2;
     }
 }

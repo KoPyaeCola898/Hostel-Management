@@ -43,7 +43,39 @@ namespace Student_Hostel_Management
 
         private void btnForm_Click(object sender, EventArgs e)
         {
-            openChildForm(new StudentForm(this));
+            //openChildForm(new FeeST(this));
+
+            cn.Open();
+            cmd = new SqlCommand("SELECT COUNT(*) FROM tbFee WHERE sid = @sid", cn);
+            cmd.Parameters.AddWithValue("sid", lblid.Text);
+            int count = Convert.ToInt32(cmd.ExecuteScalar());
+
+            if (count > 0)
+            {
+                SqlCommand cmd2 = new SqlCommand("SELECT feeStatus FROM tbFee WHERE sid = @sid", cn);
+                cmd2.Parameters.AddWithValue("sid", lblid.Text);
+                dr = cmd2.ExecuteReader();
+
+                if (dr.Read())
+                {
+                    string status = dr["feeStatus"].ToString();
+                    if (status == "Pending")
+                    {
+                        openChildForm(new FeeST(this));
+                    }
+                    else if (status == "Paid")
+                    {
+                        openChildForm(new FeeComplete(this));
+                    }
+                }
+                
+            }
+            else
+            {
+                openChildForm(new StudentForm(this));
+            }
+            cn.Close();
+
         }
 
         private void btnRule_Click(object sender, EventArgs e)

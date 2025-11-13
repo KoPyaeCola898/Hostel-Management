@@ -54,9 +54,6 @@ namespace Student_Hostel_Management
             btnSubmit.Enabled = false;
             btnCancel.Enabled = false;
 
-            txtAdFee.Visible = true;
-            lblAdFee.Visible = true;
-            btnCheck.Visible = true;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)

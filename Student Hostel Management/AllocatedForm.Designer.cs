@@ -75,6 +75,7 @@
             this.dgvAppForm.RowHeadersWidth = 62;
             this.dgvAppForm.Size = new System.Drawing.Size(984, 481);
             this.dgvAppForm.TabIndex = 15;
+            this.dgvAppForm.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAppForm_CellContentClick);
             // 
             // Column6
             // 
