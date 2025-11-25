@@ -164,9 +164,9 @@
             this.lblFee.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
             this.lblFee.Location = new System.Drawing.Point(49, 273);
             this.lblFee.Name = "lblFee";
-            this.lblFee.Size = new System.Drawing.Size(538, 33);
+            this.lblFee.Size = new System.Drawing.Size(570, 33);
             this.lblFee.TabIndex = 71;
-            this.lblFee.Text = "The hostel admission Fee is 5000 MMK.";
+            this.lblFee.Text = "The hostel admission Fee is 170000 MMK.";
             this.lblFee.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblDetails

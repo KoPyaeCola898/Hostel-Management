@@ -55,12 +55,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdRule.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="AdRule.Designer.cs">
-      <DependentUpon>AdRule.cs</DependentUpon>
-    </Compile>
     <Compile Include="AllocatedForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -110,6 +104,12 @@
     <Compile Include="HostelFormModule.Designer.cs">
       <DependentUpon>HostelFormModule.cs</DependentUpon>
     </Compile>
+    <Compile Include="ListSt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListSt.Designer.cs">
+      <DependentUpon>ListSt.cs</DependentUpon>
+    </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -147,6 +147,12 @@
     </Compile>
     <Compile Include="Rooms.Designer.cs">
       <DependentUpon>Rooms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RuleAdd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RuleAdd.Designer.cs">
+      <DependentUpon>RuleAdd.cs</DependentUpon>
     </Compile>
     <Compile Include="RuleModule.cs">
       <SubType>Form</SubType>
@@ -196,9 +202,6 @@
     <Compile Include="WardenSetting.Designer.cs">
       <DependentUpon>WardenSetting.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdRule.resx">
-      <DependentUpon>AdRule.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="AllocatedForm.resx">
       <DependentUpon>AllocatedForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -222,6 +225,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HostelFormModule.resx">
       <DependentUpon>HostelFormModule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListSt.resx">
+      <DependentUpon>ListSt.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -249,6 +255,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Rooms.resx">
       <DependentUpon>Rooms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RuleAdd.resx">
+      <DependentUpon>RuleAdd.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="RuleModule.resx">
       <DependentUpon>RuleModule.cs</DependentUpon>

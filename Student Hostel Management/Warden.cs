@@ -70,5 +70,10 @@ namespace Student_Hostel_Management
         {
             openChildForm(new Rooms(this));
         }
+
+        private void btnStudent_Click(object sender, EventArgs e)
+        {
+            openChildForm(new ListSt(this));
+        }
     }
 }

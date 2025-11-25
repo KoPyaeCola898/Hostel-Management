@@ -40,9 +40,10 @@
             this.panelTitle = new System.Windows.Forms.Panel();
             this.panelSlide = new System.Windows.Forms.Panel();
             this.btnSetting = new System.Windows.Forms.Button();
+            this.btnRoom = new System.Windows.Forms.Button();
             this.btnSForm = new System.Windows.Forms.Button();
             this.btnLogout = new System.Windows.Forms.Button();
-            this.btnRoom = new System.Windows.Forms.Button();
+            this.btnStudent = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panelLogo.SuspendLayout();
             this.panelTitle.SuspendLayout();
@@ -149,6 +150,7 @@
             this.panelSlide.AutoScroll = true;
             this.panelSlide.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(70)))), ((int)(((byte)(160)))));
             this.panelSlide.Controls.Add(this.btnSetting);
+            this.panelSlide.Controls.Add(this.btnStudent);
             this.panelSlide.Controls.Add(this.btnRoom);
             this.panelSlide.Controls.Add(this.btnSForm);
             this.panelSlide.Controls.Add(this.btnLogout);
@@ -168,7 +170,7 @@
             this.btnSetting.ForeColor = System.Drawing.Color.White;
             this.btnSetting.Image = ((System.Drawing.Image)(resources.GetObject("btnSetting.Image")));
             this.btnSetting.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSetting.Location = new System.Drawing.Point(0, 260);
+            this.btnSetting.Location = new System.Drawing.Point(0, 305);
             this.btnSetting.Name = "btnSetting";
             this.btnSetting.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
             this.btnSetting.Size = new System.Drawing.Size(200, 45);
@@ -178,6 +180,26 @@
             this.btnSetting.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnSetting.UseVisualStyleBackColor = false;
             this.btnSetting.Click += new System.EventHandler(this.btnSetting_Click);
+            // 
+            // btnRoom
+            // 
+            this.btnRoom.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnRoom.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnRoom.FlatAppearance.BorderSize = 0;
+            this.btnRoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnRoom.ForeColor = System.Drawing.Color.White;
+            this.btnRoom.Image = ((System.Drawing.Image)(resources.GetObject("btnRoom.Image")));
+            this.btnRoom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRoom.Location = new System.Drawing.Point(0, 215);
+            this.btnRoom.Name = "btnRoom";
+            this.btnRoom.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnRoom.Size = new System.Drawing.Size(200, 45);
+            this.btnRoom.TabIndex = 15;
+            this.btnRoom.Text = " Rooms";
+            this.btnRoom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnRoom.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnRoom.UseVisualStyleBackColor = false;
+            this.btnRoom.Click += new System.EventHandler(this.btnRoom_Click);
             // 
             // btnSForm
             // 
@@ -219,25 +241,25 @@
             this.btnLogout.UseVisualStyleBackColor = false;
             this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
-            // btnRoom
+            // btnStudent
             // 
-            this.btnRoom.BackColor = System.Drawing.Color.DarkBlue;
-            this.btnRoom.Dock = System.Windows.Forms.DockStyle.Top;
-            this.btnRoom.FlatAppearance.BorderSize = 0;
-            this.btnRoom.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnRoom.ForeColor = System.Drawing.Color.White;
-            this.btnRoom.Image = ((System.Drawing.Image)(resources.GetObject("btnRoom.Image")));
-            this.btnRoom.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRoom.Location = new System.Drawing.Point(0, 215);
-            this.btnRoom.Name = "btnRoom";
-            this.btnRoom.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
-            this.btnRoom.Size = new System.Drawing.Size(200, 45);
-            this.btnRoom.TabIndex = 15;
-            this.btnRoom.Text = " Rooms";
-            this.btnRoom.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnRoom.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnRoom.UseVisualStyleBackColor = false;
-            this.btnRoom.Click += new System.EventHandler(this.btnRoom_Click);
+            this.btnStudent.BackColor = System.Drawing.Color.DarkBlue;
+            this.btnStudent.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnStudent.FlatAppearance.BorderSize = 0;
+            this.btnStudent.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStudent.ForeColor = System.Drawing.Color.White;
+            this.btnStudent.Image = ((System.Drawing.Image)(resources.GetObject("btnStudent.Image")));
+            this.btnStudent.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStudent.Location = new System.Drawing.Point(0, 260);
+            this.btnStudent.Name = "btnStudent";
+            this.btnStudent.Padding = new System.Windows.Forms.Padding(5, 0, 0, 0);
+            this.btnStudent.Size = new System.Drawing.Size(200, 45);
+            this.btnStudent.TabIndex = 16;
+            this.btnStudent.Text = " Student list";
+            this.btnStudent.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnStudent.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnStudent.UseVisualStyleBackColor = false;
+            this.btnStudent.Click += new System.EventHandler(this.btnStudent_Click);
             // 
             // Warden
             // 
@@ -279,5 +301,6 @@
         private System.Windows.Forms.Button btnSForm;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Button btnRoom;
+        private System.Windows.Forms.Button btnStudent;
     }
 }

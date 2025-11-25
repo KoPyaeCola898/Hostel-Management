@@ -53,7 +53,7 @@ namespace Student_Hostel_Management
 
         private void btnRule_Click(object sender, EventArgs e)
         {
-            openChildForm(new AdRule());
+            openChildForm(new RuleAdd());
         }
 
         private void btnSetting_Click_1(object sender, EventArgs e)

@@ -121,7 +121,7 @@
   <data name="rbAyaPay.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAADNJJREFUeF7tmndQlHcexu/fs1DsLUhEFCw0oxlijSYak0u3nRkTTS4TQ5opxpRL
+        vwAADr8BOAVTJAAADNJJREFUeF7tmndQlHcexu/fs1DsLUhEFCw0oxlijSYak0u3nRkTTS4TQ5opxpRL
         Yoo5TYy5XEwulzIZ76yxoESlKCASVIoUabIUl7YssILAwi7sLs99f+/7Lrz77vuyuwiJzOwz88xE8r67
         y2e/9cf7J7glKzcYBbnBKMgNRkFuMApyg1GQG4yC3GAU5AajIDcYBfU/GIsFncZ2WFr0MDc2wVyrQ0eF
         Bu2qMhjzVDDkFJLzYcy9CuPVEpjKq2HS1sN8vRGW5hZ0thnQ2dEBdHYKL/j7qF/AdJrNaC+vQnN8CnQ/
@@ -182,7 +182,7 @@
   <data name="rbWavePay.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAEYAAABGCAYAAABxLuKEAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAEPJJREFUeF7tW2d4VcW6jnqO3suxJDTpUgRDlSIqWCBBAUEEPBiKSlNBCRALvYso
+        vwAADr8BOAVTJAAAEPJJREFUeF7tW2d4VcW6jnqO3suxJDTpUgRDlSIqWCBBAUEEPBiKSlNBCRALvYso
         IAgJpIf0XiEhvZBKQgldCBAggcA9Rw/YOIqi+N33nbiSTbJ2Itk78Pg8+fE+kFmzvjXzzldnZlvIpcbS
         gOpoIMYIGogxggZijKCBGCNoIMYIbiMxVnLjkqVcK2sqV0vbyI/nW8qvZU3kd7Tr97+zqFdifilrLheK
         H5OEwqHyUeJCGRAQKC3d0qSxc7Y0c9kl7T0SxSbIR5YkfySx+0bIiaLH5b/nW4GsJrrybifqhRhO7F9n
@@ -344,7 +344,7 @@
   <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACsAAAAyCAYAAADFhCKTAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAADd9JREFUaEPdWQdUVVcWPYBdY0ETG8s46soazcQklozRcUxcFkBsEzVmkiiJ6Bhj
+        vgAADr4B6kKxwAAADd9JREFUaEPdWQdUVVcWPYBdY0ETG8s46soazcQklozRcUxcFkBsEzVmkiiJ6Bhj
         JxELIiMgiMEoxJLEAkoQLKhgAREBRUIRrNhQBFGxgQUs1DP73Pf+94NETWKcWbPX2uvL/fe+u++5p70v
         /d+hdjOrri2GjF5sNcT+D6Fll55T9a1+P1oM+tTL+mgRWx/7Y9jJd8tdbFNP2+33oF69lzt6BVyxOVHK
         lWl9+D4PO5TP9gcv8rj95/jThEs88NAd7fsj9/nDlJv8WXwW28dn88iUPLaT744Va98fLzE+p1/y7fKX
