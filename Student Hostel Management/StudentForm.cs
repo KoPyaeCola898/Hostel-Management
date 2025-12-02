@@ -60,7 +60,7 @@ namespace Student_Hostel_Management
         {
             try
             {
-                if (MessageBox.Show("Are you sure want to pay admission fee and submit the application form?", "Submit Form", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+                if (MessageBox.Show("Are you sure want to submit the application form?", "Submit Form", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
                 {
                     cn.Open();
 
