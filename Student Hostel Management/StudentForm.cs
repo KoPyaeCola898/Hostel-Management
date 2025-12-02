@@ -97,10 +97,6 @@ namespace Student_Hostel_Management
             Clear();
         }
 
-        private void btnCheck_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Please wait while we are checking your application form status.", "Checking", MessageBoxButtons.OK, MessageBoxIcon.Information);
-        }
 
         public void LoadForm()
         {
