@@ -49,11 +49,20 @@ namespace Student_Hostel_Management
             txtfName.Enabled = false;
             txtfPhno.Enabled = false;
             txtfAddress.Enabled = false;
+
             cboMajor.Enabled = false;
             cboHostel.Enabled = false;
-            btnSubmit.Enabled = false;
-            btnCancel.Enabled = false;
 
+            btnSubmit.Enabled = false;
+            btnSubmit.Visible = false;
+            btnCancel.Enabled = false;
+            btnCancel.Visible = false;
+
+            lblstudentinfo.Enabled = false;
+            lblparentinfo.Enabled = false;
+            lblhostelinfo.Enabled = false;
+
+            lblwait.Visible = true;
         }
 
         private void btnSubmit_Click(object sender, EventArgs e)
@@ -140,6 +149,20 @@ namespace Student_Hostel_Management
                 Clear();
             }
 
+        }
+
+        private void txtRollNo_TextChanged(object sender, EventArgs e)
+        {
+            string rollNo = txtRollNo.Text.Trim();
+
+            if (rollNo.StartsWith("1"))
+            {
+                cboHostel.Enabled = false;
+            }
+            else
+            {
+                cboHostel.Enabled = true;
+            }
         }
     }
 }

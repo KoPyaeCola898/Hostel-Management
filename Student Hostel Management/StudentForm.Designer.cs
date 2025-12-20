@@ -40,16 +40,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.txtAddress = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblparentinfo = new System.Windows.Forms.Label();
             this.txtfName = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.txtfAddress = new System.Windows.Forms.TextBox();
             this.txtfPhno = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblstudentinfo = new System.Windows.Forms.Label();
             this.cboMajor = new System.Windows.Forms.ComboBox();
-            this.label6 = new System.Windows.Forms.Label();
+            this.lblhostelinfo = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.lblId = new System.Windows.Forms.Label();
@@ -57,6 +57,7 @@
             this.btnCancel = new System.Windows.Forms.Button();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblwait = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -90,6 +91,7 @@
             this.txtRollNo.Name = "txtRollNo";
             this.txtRollNo.Size = new System.Drawing.Size(220, 34);
             this.txtRollNo.TabIndex = 93;
+            this.txtRollNo.TextChanged += new System.EventHandler(this.txtRollNo_TextChanged);
             // 
             // txtPhNo
             // 
@@ -157,15 +159,15 @@
             this.txtAddress.Size = new System.Drawing.Size(567, 34);
             this.txtAddress.TabIndex = 101;
             // 
-            // label8
+            // lblparentinfo
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(142, 192);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(135, 28);
-            this.label8.TabIndex = 104;
-            this.label8.Text = "Parent Info";
+            this.lblparentinfo.AutoSize = true;
+            this.lblparentinfo.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblparentinfo.Location = new System.Drawing.Point(142, 192);
+            this.lblparentinfo.Name = "lblparentinfo";
+            this.lblparentinfo.Size = new System.Drawing.Size(135, 28);
+            this.lblparentinfo.TabIndex = 104;
+            this.lblparentinfo.Text = "Parent Info";
             // 
             // txtfName
             // 
@@ -215,15 +217,15 @@
             this.label9.TabIndex = 110;
             this.label9.Text = "Phone No :";
             // 
-            // label12
+            // lblstudentinfo
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(142, 18);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(147, 28);
-            this.label12.TabIndex = 111;
-            this.label12.Text = "Student Info";
+            this.lblstudentinfo.AutoSize = true;
+            this.lblstudentinfo.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblstudentinfo.Location = new System.Drawing.Point(142, 18);
+            this.lblstudentinfo.Name = "lblstudentinfo";
+            this.lblstudentinfo.Size = new System.Drawing.Size(147, 28);
+            this.lblstudentinfo.TabIndex = 111;
+            this.lblstudentinfo.Text = "Student Info";
             // 
             // cboMajor
             // 
@@ -255,15 +257,15 @@
             this.cboMajor.Size = new System.Drawing.Size(220, 33);
             this.cboMajor.TabIndex = 112;
             // 
-            // label6
+            // lblhostelinfo
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(141, 330);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(132, 28);
-            this.label6.TabIndex = 113;
-            this.label6.Text = "Hostel Info";
+            this.lblhostelinfo.AutoSize = true;
+            this.lblhostelinfo.Font = new System.Drawing.Font("Century Gothic", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblhostelinfo.Location = new System.Drawing.Point(141, 330);
+            this.lblhostelinfo.Name = "lblhostelinfo";
+            this.lblhostelinfo.Size = new System.Drawing.Size(132, 28);
+            this.lblhostelinfo.TabIndex = 113;
+            this.lblhostelinfo.Text = "Hostel Info";
             // 
             // label14
             // 
@@ -347,22 +349,23 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Gainsboro;
+            this.panel2.Controls.Add(this.lblwait);
             this.panel2.Controls.Add(this.btnSubmit);
             this.panel2.Controls.Add(this.btnCancel);
             this.panel2.Controls.Add(this.cboHostel);
             this.panel2.Controls.Add(this.lblId);
             this.panel2.Controls.Add(this.label17);
             this.panel2.Controls.Add(this.label14);
-            this.panel2.Controls.Add(this.label6);
+            this.panel2.Controls.Add(this.lblhostelinfo);
             this.panel2.Controls.Add(this.cboMajor);
-            this.panel2.Controls.Add(this.label12);
+            this.panel2.Controls.Add(this.lblstudentinfo);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.txtfPhno);
             this.panel2.Controls.Add(this.txtfAddress);
             this.panel2.Controls.Add(this.label10);
             this.panel2.Controls.Add(this.label11);
             this.panel2.Controls.Add(this.txtfName);
-            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.lblparentinfo);
             this.panel2.Controls.Add(this.txtAddress);
             this.panel2.Controls.Add(this.label7);
             this.panel2.Controls.Add(this.label5);
@@ -377,6 +380,18 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(984, 481);
             this.panel2.TabIndex = 60;
+            // 
+            // lblwait
+            // 
+            this.lblwait.AutoSize = true;
+            this.lblwait.Font = new System.Drawing.Font("Century Gothic", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblwait.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblwait.Location = new System.Drawing.Point(612, 431);
+            this.lblwait.Name = "lblwait";
+            this.lblwait.Size = new System.Drawing.Size(427, 47);
+            this.lblwait.TabIndex = 129;
+            this.lblwait.Text = "Waiting for result........";
+            this.lblwait.Visible = false;
             // 
             // StudentForm
             // 
@@ -413,16 +428,16 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label7;
         public System.Windows.Forms.TextBox txtAddress;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblparentinfo;
         public System.Windows.Forms.TextBox txtfName;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label10;
         public System.Windows.Forms.TextBox txtfAddress;
         public System.Windows.Forms.TextBox txtfPhno;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label lblstudentinfo;
         public System.Windows.Forms.ComboBox cboMajor;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label lblhostelinfo;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label17;
         public System.Windows.Forms.Label lblId;
@@ -430,5 +445,6 @@
         public System.Windows.Forms.Button btnCancel;
         public System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label lblwait;
     }
 }
