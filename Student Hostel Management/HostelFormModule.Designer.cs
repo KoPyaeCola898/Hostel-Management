@@ -196,6 +196,7 @@
             // 
             this.txtfPhno.Location = new System.Drawing.Point(551, 299);
             this.txtfPhno.Name = "txtfPhno";
+            this.txtfPhno.ReadOnly = true;
             this.txtfPhno.Size = new System.Drawing.Size(220, 34);
             this.txtfPhno.TabIndex = 145;
             // 
@@ -203,6 +204,7 @@
             // 
             this.txtfAddress.Location = new System.Drawing.Point(204, 343);
             this.txtfAddress.Name = "txtfAddress";
+            this.txtfAddress.ReadOnly = true;
             this.txtfAddress.Size = new System.Drawing.Size(567, 34);
             this.txtfAddress.TabIndex = 144;
             // 
@@ -228,6 +230,7 @@
             // 
             this.txtfName.Location = new System.Drawing.Point(204, 299);
             this.txtfName.Name = "txtfName";
+            this.txtfName.ReadOnly = true;
             this.txtfName.Size = new System.Drawing.Size(220, 34);
             this.txtfName.TabIndex = 141;
             // 
@@ -245,6 +248,7 @@
             // 
             this.txtAddress.Location = new System.Drawing.Point(204, 206);
             this.txtAddress.Name = "txtAddress";
+            this.txtAddress.ReadOnly = true;
             this.txtAddress.Size = new System.Drawing.Size(567, 34);
             this.txtAddress.TabIndex = 138;
             // 
@@ -297,6 +301,7 @@
             // 
             this.txtName.Location = new System.Drawing.Point(204, 166);
             this.txtName.Name = "txtName";
+            this.txtName.ReadOnly = true;
             this.txtName.Size = new System.Drawing.Size(220, 34);
             this.txtName.TabIndex = 130;
             // 
@@ -304,6 +309,7 @@
             // 
             this.txtPhNo.Location = new System.Drawing.Point(551, 122);
             this.txtPhNo.Name = "txtPhNo";
+            this.txtPhNo.ReadOnly = true;
             this.txtPhNo.Size = new System.Drawing.Size(220, 34);
             this.txtPhNo.TabIndex = 131;
             // 
@@ -311,6 +317,7 @@
             // 
             this.txtRollNo.Location = new System.Drawing.Point(204, 122);
             this.txtRollNo.Name = "txtRollNo";
+            this.txtRollNo.ReadOnly = true;
             this.txtRollNo.Size = new System.Drawing.Size(220, 34);
             this.txtRollNo.TabIndex = 132;
             // 
@@ -318,6 +325,7 @@
             // 
             this.txtHostel.Location = new System.Drawing.Point(204, 436);
             this.txtHostel.Name = "txtHostel";
+            this.txtHostel.ReadOnly = true;
             this.txtHostel.Size = new System.Drawing.Size(220, 34);
             this.txtHostel.TabIndex = 159;
             // 
@@ -334,6 +342,7 @@
             // 
             this.txtMajor.Location = new System.Drawing.Point(551, 166);
             this.txtMajor.Name = "txtMajor";
+            this.txtMajor.ReadOnly = true;
             this.txtMajor.Size = new System.Drawing.Size(220, 34);
             this.txtMajor.TabIndex = 161;
             // 
